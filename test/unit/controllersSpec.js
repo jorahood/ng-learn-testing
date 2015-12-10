@@ -1,26 +1,28 @@
 'use strict';
 
 /* jasmine specs for controllers go here */
-describe('PhoneCat controllers', function() {
+describe('controllers', function() {
 
-  describe('PhoneListCtrl', function(){
+  describe('InvoiceCtrl', function(){
     var scope, ctrl;
 
-    beforeEach(module('phonecatApp'));
+    beforeEach(module('invoice2'));
 
     beforeEach(inject(function($controller) {
       scope = {};
-      ctrl = $controller('PhoneListCtrl', {$scope:scope});
+      ctrl = $controller('InvoiceCtrl', {$scope:scope});
     }));
 
 
-    it('should create "phones" model with 3 phones', function() {
-      expect(scope.phones.length).toBe(3);
+    it('should set default quantity to one', function() {
+      expect(ctrl.qty).toBe(1);
+    });
+    it('should set default cost to two', function() {
+      expect(ctrl.cost).toBe(2);
+    });
+    it('should set default currency to EUR', function() {
+      expect(ctrl.inCurr).toBe('EUR');
     });
 
-
-    it('should set the default value of orderProp model', function() {
-      expect(scope.orderProp).toBe('age');
-    });
   });
 });

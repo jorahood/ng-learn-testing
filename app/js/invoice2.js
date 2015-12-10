@@ -1,5 +1,5 @@
 angular.module('invoice2', ['finance2'])
-.controller('InvoiceController', ['currencyConverter', function(currencyConverter) {
+.controller('InvoiceCtrl', ['currencyConverter', function(currencyConverter) {
   this.qty = 1;
   this.cost = 2;
   this.inCurr = 'EUR';
