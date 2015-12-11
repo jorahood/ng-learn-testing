@@ -1,0 +1,14 @@
+{
+  "name": "ng-learn-testing",
+  "description": "Andy tries to learn how to test AngularJS",
+  "homepage": "https://github.com/jorahood/ng-learn-testing",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "1.4.x",
+    "angular-mocks": "1.4.x",
+    "jquery": "~2.1.1",
+    "bootstrap": "~3.1.1"
+  }
+}
