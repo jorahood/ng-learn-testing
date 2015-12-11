@@ -13,7 +13,6 @@ describe('controllers', function() {
       ctrl = $controller('InvoiceCtrl', {$scope:scope});
     }));
 
-
     it('should set default quantity to one', function() {
       expect(ctrl.qty).toBe(1);
     });
